@@ -12,6 +12,39 @@ Em seguida, parto para o treinamento do modelo. Aqui no Azure, escolho um algori
 
 Depois disso, vou para a parte de avaliação, onde uso os dados de teste para ver como o modelo está performando. Olho métricas como a precisão e o erro médio — tudo isso me dá uma ideia se o modelo está acertando ou se ainda precisa de ajustes.
 
-Se tudo estiver em ordem, é hora do deploy, ou seja, publico o modelo para que ele esteja disponível como um serviço da web. Configuro as opções de implantação e pronto! Agora outras aplicações podem usar esse modelo para fazer previsões de aluguel de bicicletas.
+Se tudo estiver em ordem, é hora do deploy, ou seja, publico o modelo para que ele esteja disponível como um serviço da web. Configuro as opções de implantação e pronto! depois disso faço um teste com os Parâmetros fornecidos pela documentação
 
-Por fim, dou uma revisada nos resultados e penso em ajustes para melhorar ainda mais a precisão. É um processo bem interessante, pois passo por cada etapa do machine learning, desde organizar os dados até ter o modelo disponível para uso em aplicações reais.
+
+
+   {
+  "input_data": {
+    "columns": [
+      "day",
+      "mnth",
+      "year",
+      "season",
+      "holiday",
+      "weekday",
+      "workingday",
+      "weathersit",
+      "temp",
+      "atemp",
+      "hum",
+      "windspeed"
+    ],
+    "index": [0],
+    "data": [[1,1,2022,2,0,1,1,2,0.3,0.3,0.3,0.3]]
+  }
+ }
+
+
+
+
+
+
+e sai o output
+
+
+[
+  312.525457670471
+]
